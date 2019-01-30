@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Demo</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <a href="/add-student">Add Student</a>
+    <ol>
+        <th:block th:each="student : ${students}">
+            <li th:text="${student}"></li>
+        </th:block>
+    </ol>
+</body>
+</html>
