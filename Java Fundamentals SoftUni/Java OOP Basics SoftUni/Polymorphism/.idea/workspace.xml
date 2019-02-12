@@ -1,88 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2218af2c-eea2-4bd2-b35d-97b5c0570451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Encapsulation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise01and02_vehiclesAndVehiclesExtension/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise01and02_vehiclesAndVehiclesExtension/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise01and02_vehiclesAndVehiclesExtension/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise01and02_vehiclesAndVehiclesExtension/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise01and02_vehiclesAndVehiclesExtension/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Felime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Vegetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise03_wildFarm/Zebra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection01_overloadMethod/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection01_overloadMethod/MathOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection02_methodOverriding/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection02_methodOverriding/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection02_methodOverriding/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection03_shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection03_shapes/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection03_shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lection03_shapes/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Inheritance/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/Encapsulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Polymorphism.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise01_classBox/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise01_classBox/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise02_animalFarm/Chicken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise02_animalFarm/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise03_shoppingSpree/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise03_shoppingSpree/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise03_shoppingSpree/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise03_shoppingSpree/Product.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Dough$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Dough$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Dough$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Dough.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Pizza.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/PizzaConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/PizzaConstants.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Topping$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Topping$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/exercise04_pizzaCalories/Topping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/homework01_footballTeamGenerator/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/homework01_footballTeamGenerator/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/homework01_footballTeamGenerator/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/lection01_encapsulationTasks/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/lection01_encapsulationTasks/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/out/production/Encapsulation/lection01_encapsulationTasks/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise01_classBox/Box.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise01_classBox/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise02_animalFarm/Chicken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise02_animalFarm/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise03_shoppingSpree/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise03_shoppingSpree/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise03_shoppingSpree/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise03_shoppingSpree/Product.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/Dough.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/Pizza.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/PizzaConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/PizzaConstants.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/exercise04_pizzaCalories/Topping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/homework01_footballTeamGenerator/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/homework01_footballTeamGenerator/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/homework01_footballTeamGenerator/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/lection01_encapsulationTasks/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/lection01_encapsulationTasks/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncapsulationOOP/src/lection01_encapsulationTasks/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Inheritance/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2218af2c-eea2-4bd2-b35d-97b5c0570451" name="Default Changelist" comment="Polymorphism leaction, exercise and homework">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,12 +15,12 @@
     <session id="-829049169">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -117,154 +37,19 @@
         <counts>
           <entry key="dummy" value="21" />
           <entry key="java" value="9236" />
+          <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9236" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="96" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Vegetable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-              <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#141#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-              <folding>
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Cat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="35" column="61" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="61" />
-              <folding>
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Meat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Mouse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Tiger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-              <folding>
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Zebra.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-              <folding>
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -334,9 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,21 +131,19 @@
               <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Polymorphism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise03_wildFarm" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programming stuff/IdeaProjects/SoftUniLectionsAndHomeworks/Java Fundamentals SoftUni/Java OOP Basics SoftUni/Polymorphism/src/exercise02_wildFarm/Cat.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549478717863" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549479020112" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -377,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lection02_methodOverriding.Main" />
       <module name="Polymorphism" />
@@ -447,12 +227,9 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Main (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -470,13 +247,20 @@
       <option name="presentableId" value="Default" />
       <updated>1549272059394</updated>
     </task>
+    <task id="LOCAL-00001" summary="Polymorphism leaction, exercise and homework">
+      <created>1549478808969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549478808969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11875945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120272316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -485,7 +269,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36557376" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36557376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -506,6 +290,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Polymorphism leaction, exercise and homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Polymorphism leaction, exercise and homework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,17 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Zebra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -767,17 +544,6 @@
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,6 +582,28 @@
           <folding>
             <element signature="e#307#308#0" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Tiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercise03_wildFarm/Zebra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
           </folding>
         </state>
       </provider>
