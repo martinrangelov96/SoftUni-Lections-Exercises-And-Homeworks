@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bfefe3-3f0e-436e-af76-9bcaf20a680b" name="Default Changelist" comment="Interfaces and Abstraction lection, exercise and homework commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Polymorphism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Polymorphism/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encapsulation_Not_Bugged" beforeDir="false" afterPath="$PROJECT_DIR$/../Encapsulation_Not_Bugged" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
     <session id="-917057899">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="1" />
@@ -147,6 +146,11 @@
               <item name="InterfacesAndAbstraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="InterfacesAndAbstraction" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="InterfacesAndAbstraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterfacesAndAbstraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -154,7 +158,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549978870838" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549979044006" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
