@@ -4,10 +4,7 @@ import app.entities.Garage;
 import app.entities.cars.Car;
 import app.entities.cars.PerformanceCar;
 import app.entities.cars.ShowCar;
-import app.entities.races.CasualRace;
-import app.entities.races.DragRace;
-import app.entities.races.DriftRace;
-import app.entities.races.Race;
+import app.entities.races.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -18,6 +15,8 @@ public class CarManager {
     private static final String CASUAL_RACE_TYPE = "Casual";
     private static final String DRAG_RACE_TYPE = "Drag";
     private static final String DRIFT_RACE_TYPE = "Drift";
+    private static final String TIME_LIMIT_RACE_TYPE = "TimeLimit";
+    private static final String CIRCUIT_RACE_TYPE = "Circuit";
 
     private Map<Integer, Car> cars;
     private Map<Integer, Race> races;
@@ -50,7 +49,7 @@ public class CarManager {
         return this.cars.get(id).toString();
     }
 
-    public void open(int id, String type, int length, String route, int prizePool) {
+    public void open(int id, String type, int length, String route, int prizePool, int goldTimeOrLaps) {
         Race race = null;
 
         switch (type) {
@@ -62,6 +61,12 @@ public class CarManager {
                 break;
             case DRIFT_RACE_TYPE:
                 race = new DriftRace(length, route, prizePool);
+                break;
+            case TIME_LIMIT_RACE_TYPE:
+                race = new TimeLimitRace(length, route, prizePool, goldTimeOrLaps);
+                break;
+            case CIRCUIT_RACE_TYPE:
+                race = new CircuitRace(length, route, prizePool, goldTimeOrLaps);
                 break;
         }
 

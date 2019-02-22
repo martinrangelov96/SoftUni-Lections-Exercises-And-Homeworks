@@ -21,7 +21,7 @@ public abstract class Race {
         this.participants = new ArrayList<>();
     }
 
-    private int performancePoints(String raceType, Car car) {
+    protected int performancePoints(String raceType, Car car) {
         switch (raceType) {
             case "CasualRace":
                 return car.getOverallPerformancePoints();
@@ -34,7 +34,7 @@ public abstract class Race {
         }
     }
 
-    private List<Car> getWinners() {
+    protected List<Car> getWinners() {
         return this.participants
                 .stream()
                 .sorted((car1, car2) -> {
@@ -46,7 +46,7 @@ public abstract class Race {
                 .collect(Collectors.toList());
     }
 
-    private int getPercentagePriceValue(int index) {
+    protected int getPercentagePriceValue(int index) {
         switch (index) {
             case 0:
                 return 50;
@@ -62,8 +62,27 @@ public abstract class Race {
         return Collections.unmodifiableCollection(this.participants);
     }
 
+    public Car getParticipant() {
+        for (Car participant : participants) {
+            return participant;
+        }
+        return null;
+    }
+
     public void addParticipant(Car car) {
         this.participants.add(car);
+    }
+
+    public int getLength() {
+        return this.length;
+    }
+
+    public String getRoute() {
+        return this.route;
+    }
+
+    public int getPrizePool() {
+        return this.prizePool;
     }
 
     public boolean hasCar(Car car) {
@@ -80,11 +99,6 @@ public abstract class Race {
         Collection<Car> winners = this.getWinners();
 
         StringBuilder race = new StringBuilder();
-
-        //o	“{route} - {length}
-        //o	 1. {brand} {model} {performancePoints}PP - ${moneyWon}
-        //o	 2. {brand} {model} {performancePoints}PP - ${moneyWon}
-        //o	 3. {brand} {model} {performancePoints}PP - ${moneyWon}”
 
         race
                 .append(String.format("%s - %s", this.route, this.length));

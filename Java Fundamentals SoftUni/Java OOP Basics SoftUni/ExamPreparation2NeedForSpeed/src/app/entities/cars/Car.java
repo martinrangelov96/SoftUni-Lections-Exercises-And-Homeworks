@@ -16,7 +16,7 @@ public abstract class Car {
         this.setHorsepower(horsepower);
         this.acceleration = acceleration;
         this.setSuspension(suspension);
-        this.durability = durability;
+        this.setDurability(durability);
     }
 
     protected void setHorsepower(int horsepower){
@@ -43,7 +43,7 @@ public abstract class Car {
     }
 
     public int getSuspensionPerformancePoints() {
-        return this.suspension + this.durability;
+        return this.suspension + this.getDurability();
     }
 
     public int getOverallPerformancePoints() {
@@ -56,6 +56,22 @@ public abstract class Car {
 
     public String getModel() {
         return this.model;
+    }
+
+    public int getHorsepower() {
+        return this.horsepower;
+    }
+
+    public int getAcceleration() {
+        return this.acceleration;
+    }
+
+    public int getDurability() {
+        return this.durability;
+    }
+
+    public void setDurability(int durability) {
+        this.durability = durability;
     }
 
     @Override
