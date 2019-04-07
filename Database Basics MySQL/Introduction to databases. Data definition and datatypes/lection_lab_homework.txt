@@ -92,7 +92,7 @@ SELECT * from users;
 
 #HOMEWORK TASKS
 
-#9. Change Primary Key
+#TASK 9. Change Primary Key
 ALTER TABLE users
 MODIFY id INT NOT NULL;
 
@@ -102,8 +102,9 @@ DROP PRIMARY KEY;
 ALTER TABLE users
 ADD PRIMARY KEY(id, username);
 
-#---
-#10. Set Default Value of a Field
+#---END TASK 9
+
+#TASK 10. Set Default Value of a Field
 ALTER TABLE users
 MODIFY last_login_time DATETIME DEFAULT CURRENT_TIMESTAMP;
 
@@ -116,13 +117,14 @@ DROP PRIMARY KEY;
 ALTER TABLE users
 ADD PRIMARY KEY(id);
 
-#-------
+#------- END OF TASK 10
+
 #11. Set Unique Field
 ALTER TABLE users
 MODIFY username VARCHAR(26) NOT NULL UNIQUE;
 #-------
 
-#12. Movies Database
+#TASK 12. Movies Database
 CREATE DATABASE movies;
 USE movies;
 
@@ -188,9 +190,9 @@ VALUES
 ('2001'),
 ('Joker');
 
-#-------
+#-------END OF TASK 12
 
-#13. Car Rental Database
+#TASK 13. Car Rental Database
 CREATE DATABASE car_rental;
 USE car_rental;
 
@@ -285,9 +287,9 @@ VALUES
 
 SELECT * FROM rental_orders;
 
-#--------
+#--------END OF TASK 13
 
-#14. Hotel Database
+#TASK 14. Hotel Database
 CREATE DATABASE hotel;
 USE hotel;
 
@@ -408,9 +410,9 @@ VALUES
 (2, 3, 5.80),
 (3, 1, 8.20);
 
-#---------
+#---------END OF TASK 14
 
-#15. Create SoftUni Database
+#TASK 15. Create SoftUni Database
 CREATE DATABASE soft_uni;
 USE soft_uni;
 
@@ -451,9 +453,9 @@ ALTER TABLE employees
 ADD CONSTRAINT fk_employees_departments FOREIGN KEY(department_id) REFERENCES departments(id),
 ADD CONSTRAINT fk_employees_addresses FOREIGN KEY (address_id) REFERENCES addresses(id);
 
-#-----------
+#-----------END OF TASK 15
 
-#17. Basic Insert
+#TASK 17. Basic Insert
 INSERT INTO towns(name)
 VALUES
 ('Sofia'),
@@ -477,18 +479,18 @@ VALUES
 ('Georgi', 'Terziev', 'Ivanov', 'CEO', 2, STR_TO_DATE('09/12/2007','%d/%m/%Y'), 3000.00),
 ('Peter', 'Pan', 'Pan', 'Intern', 3, STR_TO_DATE('28/08/2016', '%d/%m/%Y'), 599.88);
 
-#--------
+#--------END OF TASK 17
 
-#18. Basic Select All Fields
+#TASK 18. Basic Select All Fields
 SELECT * FROM towns;
 
 SELECT * FROM departments;
 
 SELECT * from employees;
 
-#--------
+#--------END OF TASK 18
 
-#19. Basic Select All Fields and Order Them
+#TASK 19. Basic Select All Fields and Order Them
 SELECT * FROM towns
 ORDER BY name;
 
@@ -498,9 +500,9 @@ ORDER BY name;
 SELECT * FROM employees
 ORDER BY salary DESC;
 
-#----------------
+#----------------END OF TASK 19
 
-#20. Basic Select Some Fields
+#TASK 20. Basic Select Some Fields
 SELECT name FROM towns
 ORDER by name;
 
@@ -510,23 +512,25 @@ ORDER by name;
 SELECT first_name, last_name, job_title, salary FROM employees
 ORDER BY salary DESC;
 
-#------------------
+#------------------END OF TASK 20
 
-#21. Increase Employees Salary
+#TASK 21. Increase Employees Salary
 UPDATE employees
 SET salary = salary * 1.1;
 
 SELECT salary FROM employees;
 
-#------------
+#------------END OF TASK 21
 
-#22. Decrease Tax Rate
+#TASK 22. Decrease Tax Rate
 UPDATE payments
 SET tax_rate = tax_rate * 0.97;
 
 SELECT tax_rate FROM payments;
 
-#--------------
+#--------------END OF TASK 22
 
-#23. Delete All Records
+#TASK 23. Delete All Records
 TRUNCATE TABLE occupancies;
+
+#-------END OF TASK 23
