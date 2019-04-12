@@ -272,6 +272,7 @@ CREATE TABLE `agenda` (
 			REFERENCES `subjects`(`subject_id`)
 );
 
+#--END OF TASK 6
 
 #TASK 9 Peaks in Rila
 
