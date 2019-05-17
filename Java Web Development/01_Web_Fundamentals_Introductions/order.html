@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Store</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="topnav">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="all-beers.html">See All Beers</a>
+        <a class="active" href="order.html">Order a Beer</a>
+        <a class="right" href="register.html">Register</a>
+        <a class="right" href="login.html">Login</a>
+    </div>
+</nav>
+
+<main>
+    <center>
+        <h1>Order a Beer</h1>
+        <br/>
+        <form action="/order" method="post">
+            <label for="brandSelect">Brand</label>
+            <select name="Brand" id="brandSelect">
+                <option selected disabled>Select a brand</option>
+                <option value="corona">Corona Extra 330ml</option>
+                <option value="stella">Stella 330ml</option>
+            </select>
+            <label for="quantityInput">Quantity</label>
+            <input placeholder="Number of beers" type="number" id="quantityInput" min="1" max="15">
+            <label for="destinationSelect">Destination</label>
+            <select name="Destination" id="destinationSelect">
+                <option selected disabled>Select destination</option>
+                <option value="Sofia">Sofia</option>
+                <option value="London">London</option>
+                <option value="NY">New York</option>
+            </select>
+            <label for="b-dayInput">Birth Date</label>
+            <input type="date" id="b-dayInput">
+            <label for="opinionTextArea">Got an opinion</label>
+            <textarea name="opinion" id="opinionTextArea" cols="30" rows="10"></textarea>
+            <input type="submit" value="Order" id="orderBeerBtn">
+        </form>
+    </center>
+</main>
+
+<footer>
+    <hr/>
+    <p><em>&copy; 2017 &ndash; SoftUni Beers</em></p>
+</footer>
+
+</body>
+
+</html>

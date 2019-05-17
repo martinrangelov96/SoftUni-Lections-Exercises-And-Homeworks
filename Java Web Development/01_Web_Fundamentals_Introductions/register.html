@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Store</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="topnav">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="all-beers.html">See All Beers</a>
+        <a href="order.html">Order a Beer</a>
+        <a class="right active" href="register.html">Register</a>
+        <a class="right" href="login.html">Login</a>
+    </div>
+</nav>
+
+<main>
+    <center>
+        <h1>Register</h1>
+        <br/>
+        <form action="/register" method="post">
+            <label for="fullNameInput">Your Name</label>
+            <input placeholder="Enter Name" type="text" id="fullNameInput">
+            <label for="usernameInput">Username</label>
+            <input placeholder="Username" type="text" id="usernameInput">
+            <label for="emailInput">Email</label>
+            <input placeholder="email@domain.com" type="email" id="emailInput">
+            <label for="passwordInput">Password</label>
+            <input placeholder="Password" type="password" id="passwordInput">
+            <label for="confirmPasswordInput">Confirm Password</label>
+            <input placeholder="Confirm Password" type="password" id="confirmPasswordInput">
+            <input type="submit" value="Register">
+        </form>
+    </center>
+</main>
+
+<footer>
+    <hr/>
+    <p><em>&copy; 2017 &ndash; SoftUni Beers</em></p>
+</footer>
+
+</body>
+
+</html>
