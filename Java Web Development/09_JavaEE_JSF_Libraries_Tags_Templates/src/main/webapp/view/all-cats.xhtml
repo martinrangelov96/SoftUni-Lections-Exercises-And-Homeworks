@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+
+<ui:composition template="templates/base-layout.xhtml">
+    <ui:define name="main-content">
+        <div class="jumbotron justify-content-center jumbotron-background">
+            <div class="row">
+                <div class="col col-md-12 d-flex justify-content-center">
+                    <h1>All Cats!</h1>
+                </div>
+            </div>
+            <hr class="hr-background" />
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Added On</th>
+                </tr>
+                </thead>
+                <tbody>
+                <p:repeat value="#{catListBean.cats}" var="cat">
+                    <tr>
+                        <td scope="col">#{cat.name}</td>
+                        <td scope="col">#{cat.breed}</td>
+                        <td scope="col">#{cat.color}</td>
+                        <td scope="col">#{cat.gender}</td>
+                        <td scope="col">#{cat.price}</td>
+                        <td scope="col">
+                            <h:outputText value="#{cat.addedOn}" >
+                                <f:convertDateTime pattern="yyyy-MM-dd"/>
+                            </h:outputText>
+                        </td>
+                    </tr>
+                </p:repeat>
+                </tbody>
+            </table>
+        </div>
+    </ui:define>
+</ui:composition>
+
+</html>
