@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition template="templates/base-layout.xhtml">
+    <ui:define name="main-content">
+        <main class="mt-3">
+            <h1 class="text-center text-torshia">Register</h1>
+            <hr class="bg-panda w-50 hr-2"/>
+            <h:form class="mx-auto w-50" method="post" action="/register">
+                <div class="form-group">
+                    <h:outputLabel for="username" class="text-torshia" value="Username"/>
+                    <h:inputText value="#{userRegisterBean.userRegisterBindingModel.username}" type="text"
+                                 class="form-control" id="username" a:placeholder="Username..." name="username"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel for="password" class="text-torshia" value="Password"/>
+                    <h:inputSecret value="#{userRegisterBean.userRegisterBindingModel.password}" type="password"
+                                   class="form-control" id="password" a:placeholder="Password..." name="password"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel for="confirmPassword" class="text-torshia" value="Confirm Password"/>
+                    <h:inputSecret value="#{userRegisterBean.userRegisterBindingModel.confirmPassword}" type="password"
+                                   class="form-control" id="confirmPassword" a:placeholder="Confirm Password..."
+                                   name="confirmPassword"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel for="email" class="text-torshia" value="Email"/>
+                    <h:inputText value="#{userRegisterBean.userRegisterBindingModel.email}" type="email"
+                                 class="form-control" id="email" a:placeholder="Email..." name="email"/>
+                </div>
+                <div class="button-holder mt-4 d-flex justify-content-center">
+                    <h:commandButton action="#{userRegisterBean.register}" type="submit" class="btn bg-panda text-white"
+                                     value="Register"/>
+                </div>
+            </h:form>
+        </main>
+    </ui:define>
+</ui:composition>
+
+</html>
