@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca6ad3e-a4e3-4ce3-a584-7a11576ee7d6" name="Default Changelist" comment="" />
+    <list default="true" id="aca6ad3e-a4e3-4ce3-a584-7a11576ee7d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Exam_Preparation_Casebook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/12_Exam_Preparation_Casebook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/friends.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/friends.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/home.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/12_Exam_Preparation_Casebook.kotlin_module" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,14 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/UserFriendsBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-38">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -65,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/UserProfileBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="299">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/home.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -86,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/profile.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="272">
               <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
             </state>
           </provider>
@@ -95,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/view/UserHomeViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="323">
               <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="e#218#219#0" expanded="true" />
@@ -118,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/HomeBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
+            <state relative-caret-position="782">
               <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,15 +139,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/service/UserServiceModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="527">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/friends.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="20" column="81" lean-forward="true" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+            <state relative-caret-position="187">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -178,6 +178,9 @@
       <find>profile</find>
       <find>removefr</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/webapp/view/templates/navbar.xhtml" root0="FORCE_HIGHLIGHTING" />
@@ -243,12 +246,14 @@
     <option name="width" value="1010" />
     <option name="height" value="551" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,6 +294,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="casebook" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="casebook" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,124 +320,7 @@
               <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="binding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook-lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="12_Exam_Preparation_Casebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="casebook-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="png" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="12_Exam_Preparation_Casebook" type="b2602c69:ProjectViewProjectNode" />
@@ -437,15 +334,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/casebook-lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -630,17 +527,18 @@
       <updated>1560156798724</updated>
       <workItem from="1560156800669" duration="21761000" />
       <workItem from="1560238305850" duration="5337000" />
+      <workItem from="1560249199955" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27098000" />
+    <option name="totallyTimeSpent" value="28524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20121029" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -651,7 +549,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3764321" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3764321" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -666,7 +564,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.15733737" />
+      <window_info anchor="right" id="Database" order="1" weight="0.15733737" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" />
@@ -886,9 +784,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/img/female.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/img/female.png" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/login.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -896,9 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/img/male.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/img/male.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/view/UserProfileViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -1053,37 +947,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/service/UserServiceModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-          </folding>
+    <entry file="das://2d879043-7627-4326-b71d-8a36022c144d/schema/casebook_db/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9d6d085c-b46a-4888-a7bc-ff5adec961f1">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/UserProfileBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/profile.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/png/male.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/view/UserHomeViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="323">
           <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#218#219#0" expanded="true" />
@@ -1102,48 +984,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2d879043-7627-4326-b71d-8a36022c144d/schema/casebook_db/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9d6d085c-b46a-4888-a7bc-ff5adec961f1">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/profile.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/friends.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="81" lean-forward="true" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2d879043-7627-4326-b71d-8a36022c144d/schema/casebook_db/table/users_friends">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9d6d085c-b46a-4888-a7bc-ff5adec961f1">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/HomeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
+        <state relative-caret-position="782">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1151,13 +994,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/casebook-lib/png/male.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/casebook/domain/models/service/UserServiceModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2d879043-7627-4326-b71d-8a36022c144d/schema/casebook_db/table/users_friends">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="d351533e-f033-41c6-bf51-5b1af3e0bb20">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/UserFriendsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+        <state relative-caret-position="-38">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/friends.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/casebook/web/beans/UserProfileBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

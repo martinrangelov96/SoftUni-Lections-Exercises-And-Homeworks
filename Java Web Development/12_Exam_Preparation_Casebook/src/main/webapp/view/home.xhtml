@@ -16,7 +16,9 @@
             <hr class="my-4"/>
             <div class="container">
                 <div class="row mb-4 d-flex justify-content-around">
-                        <c:forEach items="#{homeBean.models}" var="model">
+                        <c:forEach items="#{homeBean.models}" var="model" varStatus="status">
+                            <h:outputText value="&lt;div class='row mb-4 d-flex justify-content-around'&gt;" escape="false"
+                                          rendered="#{status.index % 4 == 0}"/>
                             <div class="col-md-2 d-flex flex-column text-center">
                                 <c:choose>
                                     <c:when test="#{model.gender == 'Male'}">
@@ -33,7 +35,9 @@
                                     <h:commandButton action="#{homeBean.addFriend(model.id)}" class="btn btn-info" value="Add Friend"/>
                                 </h:form>
                             </div>
+<!--                            <h:outputText value="&lt;/div&gt;" escape="false" rendered="#{status.index % 3 == 2}" />-->
                         </c:forEach>
+                    <h:outputText value="&lt;/div&gt;" escape="false" rendered="#{homeBean.models.size() % 4 != 0}" />
                 </div>
             </div>
             <hr class="my-3"/>
