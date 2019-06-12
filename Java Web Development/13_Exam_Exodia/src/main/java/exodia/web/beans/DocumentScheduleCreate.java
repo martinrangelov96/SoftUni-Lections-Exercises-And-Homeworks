@@ -10,6 +10,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @Named
@@ -32,18 +33,6 @@ public class DocumentScheduleCreate {
 
     @PostConstruct
     public void initModel() {
-//        String id = FacesContext
-//                .getCurrentInstance()
-//                .getExternalContext()
-//                .getRequestParameterMap()
-//                .get("id");
-//
-//        DocumentServiceModel documentServiceModel = this.documentService.getDocumentById(id);
-//
-//        if (documentServiceModel == null) {
-//            throw new IllegalArgumentException("Something went wrong while visiting re-routing to Details page.");
-//        }
-
         this.model = new DocumentScheduleBindingModel();
     }
 
@@ -56,13 +45,7 @@ public class DocumentScheduleCreate {
     }
 
     public void saveDocument() throws IOException {
-        DocumentServiceModel documentServiceModel = this.modelMapper.map(this.model, DocumentServiceModel.class);
-
-        if (documentServiceModel == null) {
-            throw new IllegalArgumentException("Something went wrong while visiting re-routing to Details page.");
-        }
-
-        this.documentService.saveDocument(documentServiceModel);
+        DocumentServiceModel documentServiceModel = this.documentService.saveDocument(this.modelMapper.map(this.model, DocumentServiceModel.class));
 
         String id = documentServiceModel.getId();
 
