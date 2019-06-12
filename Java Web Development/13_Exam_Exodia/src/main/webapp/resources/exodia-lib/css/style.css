@@ -1,0 +1,27 @@
+.bg-exodia {
+    background-color: #191970;
+}
+
+.text-exodia {
+    color: #191970;
+}
+
+.hr-2 {
+    height: 2px;
+}
+
+textarea {
+    resize: none;
+}
+
+.limited-text{
+    text-overflow: ellipsis;
+    max-width: 1ch;
+}
+
+/*.home-container {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(5, 1fr);*/
+/*    grid-template-rows: auto;*/
+/*    grid-gap: 1.5rem 3rem;*/
+/*}*/
