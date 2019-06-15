@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aedf8c19-321c-47bb-9d43-09b0e4ff6b4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13_Exam_Exodia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/13_Exam_Exodia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exodia/web/beans/DocumentScheduleCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exodia/web/beans/DocumentScheduleCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/13_Exam_Exodia-1.0-SNAPSHOT/WEB-INF/classes/exodia/web/beans/DocumentScheduleCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/13_Exam_Exodia-1.0-SNAPSHOT/WEB-INF/classes/exodia/web/beans/DocumentScheduleCreate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/13_Exam_Exodia-1.0-SNAPSHOT/view/schedule.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/13_Exam_Exodia-1.0-SNAPSHOT/view/schedule.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/13_Exam_Exodia.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exodia/web/beans/DocumentScheduleCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exodia/web/beans/DocumentScheduleCreate.class" afterDir="false" />
-    </list>
+    <list default="true" id="aedf8c19-321c-47bb-9d43-09b0e4ff6b4d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exodia/web/beans/DocumentScheduleCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="311">
+              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#924#925#0" expanded="true" />
@@ -422,12 +413,27 @@
       <workItem from="1560339323795" duration="8101000" />
       <workItem from="1560350505547" duration="6997000" />
       <workItem from="1560371897044" duration="8312000" />
-      <workItem from="1560381883806" duration="516000" />
+      <workItem from="1560381883806" duration="666000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed after creating Document to Document's details">
+      <created>1560382493428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560382493428</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed redirecting after creating Document to Document's details">
+      <created>1560382511176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560382511176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25346000" />
+    <option name="totallyTimeSpent" value="25496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -444,7 +450,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3797054" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3797054" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -474,6 +480,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed after creating Document to Document's details" />
+    <MESSAGE value="Fixed redirecting after creating Document to Document's details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed redirecting after creating Document to Document's details" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/templates/footer.xhtml">
@@ -981,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exodia/web/beans/DocumentScheduleCreate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="311">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#924#925#0" expanded="true" />
