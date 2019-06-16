@@ -1,1 +1,1 @@
-# SoftUniLectionsAndHomeworks
+# SoftUni lections, exercises and homeworks
