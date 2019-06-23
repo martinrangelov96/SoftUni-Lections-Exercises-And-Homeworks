@@ -34,7 +34,9 @@
                             </form>
                         </td>
                         <td>
-                            <button class="btn re-background">Delete</button>
+                            <form th:action="@{/viruses/delete/{id}/(id=${virus.id})}" th:method="post">
+                                <button class="btn re-background">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 </div>

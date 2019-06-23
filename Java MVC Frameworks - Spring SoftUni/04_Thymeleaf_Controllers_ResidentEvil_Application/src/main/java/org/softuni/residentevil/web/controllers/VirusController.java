@@ -3,8 +3,9 @@ package org.softuni.residentevil.web.controllers;
 import org.modelmapper.ModelMapper;
 import org.softuni.residentevil.web.domain.models.binding.VirusAddBindingModel;
 import org.softuni.residentevil.web.domain.models.service.VirusServiceModel;
-import org.softuni.residentevil.web.domain.view.CapitalListViewModel;
-import org.softuni.residentevil.web.domain.view.VirusListViewModel;
+import org.softuni.residentevil.web.domain.models.view.CapitalListViewModel;
+import org.softuni.residentevil.web.domain.models.view.VirusDeleteViewModel;
+import org.softuni.residentevil.web.domain.models.view.VirusListViewModel;
 import org.softuni.residentevil.web.service.CapitalService;
 import org.softuni.residentevil.web.service.VirusService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,7 +65,27 @@ public class VirusController extends BaseController {
         modelAndView.addObject("viruses",
                 this.virusService.findAllViruses().stream().map(v -> this.modelMapper.map(v, VirusListViewModel.class)).collect(Collectors.toList()));
 
-        return super.view("all-viruses", modelAndView);
+        return super.view("show-viruses", modelAndView);
+    }
+
+    @GetMapping("/delete/{id}")
+    public ModelAndView delete(@PathVariable("id") Long id, ModelAndView modelAndView) {
+        VirusServiceModel virusServiceModel = this.virusService.findVirusById(id);
+
+        if (virusServiceModel == null) {
+            throw new IllegalArgumentException("Error while deleting a virus");
+        }
+
+        modelAndView.addObject("virus", this.modelMapper.map(virusServiceModel, VirusDeleteViewModel.class));
+        modelAndView.addObject("capitals",
+                this.capitalService.findAllCapitals().stream().map(c -> this.modelMapper.map(c, CapitalListViewModel.class)).collect(Collectors.toList()));
+
+        return super.view("delete-virus", modelAndView);
+    }
+
+    @PostMapping("/delete/{id}")
+    public ModelAndView deleteConfirm(@PathVariable("id") Long id, ModelAndView modelAndView) {
+        return modelAndView;
     }
 
     @PostMapping("/edit/{id}")

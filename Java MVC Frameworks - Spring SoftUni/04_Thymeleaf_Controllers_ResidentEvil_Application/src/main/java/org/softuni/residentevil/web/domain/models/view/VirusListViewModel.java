@@ -1,4 +1,4 @@
-package org.softuni.residentevil.web.domain.view;
+package org.softuni.residentevil.web.domain.models.view;
 
 import org.softuni.residentevil.web.domain.entities.Magnitude;
 
@@ -45,4 +45,5 @@ public class VirusListViewModel {
     public void setReleasedOn(LocalDate releasedOn) {
         this.releasedOn = releasedOn;
     }
+
 }

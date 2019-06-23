@@ -1,4 +1,4 @@
-package org.softuni.residentevil.web.domain.view;
+package org.softuni.residentevil.web.domain.models.view;
 
 public class CapitalListViewModel {
 
@@ -23,4 +23,5 @@ public class CapitalListViewModel {
     public void setName(String name) {
         this.name = name;
     }
+
 }
