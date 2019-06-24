@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10bbd75a-2d00-409b-9577-278f9e15eb34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/view/CapitalListViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/view/VirusDeleteViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/view/VirusListViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/delete-virus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/VirusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/VirusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/view/CapitalListViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/view/VirusListViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/all-viruses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/show-viruses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/VirusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/VirusController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/domain/view/CapitalListViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/domain/view/VirusListViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/all-viruses.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -345,12 +332,20 @@
       <workItem from="1561311948151" duration="7000" />
       <workItem from="1561312642527" duration="119000" />
       <workItem from="1561314483970" duration="3593000" />
-      <workItem from="1561318922216" duration="1116000" />
+      <workItem from="1561318922216" duration="1177000" />
     </task>
+    <task id="LOCAL-00001" summary="structure changes">
+      <created>1561320084295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561320084295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5014000" />
+    <option name="totallyTimeSpent" value="5075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -375,7 +370,7 @@
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49848714" visible="true" weight="0.3502455" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49848714" weight="0.3502455" />
       <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.49924356" weight="0.3633388" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -394,6 +389,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="structure changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

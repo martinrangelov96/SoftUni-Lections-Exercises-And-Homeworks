@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <th:block th:include="~{fragments/navbar}"></th:block>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+            <table class="table mt-4">
+                <h2>All Viruses</h2>
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Magnitude</th>
+                    <th scope="col">Released On</th>
+                </tr>
+                </thead>
+                <tbody>
+                <div class="container>" th:each="virus : ${viruses}">
+                    <tr>
+                        <th scope="row" th:text="${virus.id}"></th>
+                        <td th:text="${virus.name}"></td>
+                        <td th:text="${virus.magnitude}"></td>
+                        <td th:text="${virus.releasedOn}"></td>
+                        <td>
+                            <form th:action="@{/viruses/edit/{id}/(id=${virus.id})}" th:method="post">
+                                <button class="btn re-background">Edit</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form th:action="@{/viruses/delete/{id}/(id=${virus.id})}" th:method="post">
+                                <button class="btn re-background">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                </div>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>
