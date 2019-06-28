@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10bbd75a-2d00-409b-9577-278f9e15eb34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity5_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/config/ApplicationSecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/binding/UserRegisterBindingModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/service/RoleServiceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/service/UserServiceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/view/RoleViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/domain/models/view/UserViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/service/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/unauthorized.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/show-users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../06_Filters_User_Authetication_Spring_Security/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/residentevil_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/residentevil_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7bb50a7-4b5c-41e3-9850-d6c022fce203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7bb50a7-4b5c-41e3-9850-d6c022fce203.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/residentevil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/residentevil.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/config/ApplicationBeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/config/ApplicationBeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/VirusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/residentevil/web/controllers/VirusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/config/ApplicationBeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/config/ApplicationBeanConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/VirusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/softuni/residentevil/web/controllers/VirusController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/delete-virus.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/delete-virus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/navbar.html" afterDir="false" />
-    </list>
+    <list default="true" id="10bbd75a-2d00-409b-9577-278f9e15eb34" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -558,7 +514,7 @@
       <workItem from="1561318922216" duration="1177000" />
       <workItem from="1561635380682" duration="7956000" />
       <workItem from="1561656368592" duration="9076000" />
-      <workItem from="1561705404764" duration="10418000" />
+      <workItem from="1561705404764" duration="10680000" />
     </task>
     <task id="LOCAL-00001" summary="structure changes">
       <created>1561320084295</created>
@@ -567,11 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561320084295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Spring Security, roles etc. Different roles have access to different routes now.">
+      <created>1561717237571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561717237571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32525000" />
+    <option name="totallyTimeSpent" value="32787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -618,7 +581,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="structure changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure changes" />
+    <MESSAGE value="Added Spring Security, roles etc. Different roles have access to different routes now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Spring Security, roles etc. Different roles have access to different routes now." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

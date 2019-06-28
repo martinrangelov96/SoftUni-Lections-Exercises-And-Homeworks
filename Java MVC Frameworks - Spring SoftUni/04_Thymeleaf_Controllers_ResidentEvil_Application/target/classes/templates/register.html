@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <th:block th:include="~{fragments/navbar}"></th:block>
+    </header>
+
+    <main>
+        <div class="jumbotron re-background mt-4">
+            <form th:action="@{/register}" th:method="post">
+                <div class="form-group">
+                    <label for="inputUsername">Username</label>
+                    <input type="text" class="form-control" id="inputUsername" name="username" placeholder="Enter username...">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Enter password...">
+                </div>
+                <div class="form-group">
+                    <label for="inputConfirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="inputConfirmPassword" name="confirmPassword" placeholder="Confirm password...">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="email" placeholder="Enter email...">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>
