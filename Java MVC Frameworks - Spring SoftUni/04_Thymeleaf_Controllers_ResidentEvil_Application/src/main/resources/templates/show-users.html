@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <th:block th:include="~{fragments/navbar}"></th:block>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+            <table class="table mt-4">
+                <h2>All Users</h2>
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+<!--                    <th scope="col">Role</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <div class="container>" th:each="user, iter : ${users}">
+                    <tr>
+                        <th scope="row" th:text="${iter.index + 1}"></th>
+                        <td th:text="${user.username}"></td>
+                        <td th:text="${user.email}"></td>
+<!--                        <td th:text="${user.authority}"></td>-->
+<!--                        <td th:each="rloe : ${roles}" th:text="${role.authority}"></td>-->
+
+<!--                        <td>-->
+<!--                            <form th:action="@{/viruses/edit/{id}/(id=${virus.id})}" th:method="post">-->
+<!--                                <button class="btn re-background">Edit</button>-->
+<!--                            </form>-->
+<!--                        </td>-->
+<!--                        <td>-->
+<!--                            <form th:action="@{/viruses/delete/{id}/(id=${virus.id})}" th:method="post">-->
+<!--                                <button class="btn re-background">Delete</button>-->
+<!--                            </form>-->
+<!--                        </td>-->
+                    </tr>
+                </div>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

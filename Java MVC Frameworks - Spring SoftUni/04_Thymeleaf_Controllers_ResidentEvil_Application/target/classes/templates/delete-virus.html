@@ -12,7 +12,7 @@
     <main>
         <div class="container mt-4">
             <h1>Delete a Virus!</h1>
-            <form th:action="@{/viruses/delete/{id}(id=${bindingModel.id})}" th:method="post">
+            <form th:action="@{/viruses/delete/{id}(id=${virus.id})}" th:method="post">
 
                 <div class="form-group">
                     <label for="inputVirusName">Name</label>

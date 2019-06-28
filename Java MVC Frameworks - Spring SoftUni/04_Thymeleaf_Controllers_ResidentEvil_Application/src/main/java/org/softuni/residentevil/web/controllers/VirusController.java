@@ -9,6 +9,7 @@ import org.softuni.residentevil.web.domain.models.view.VirusListViewModel;
 import org.softuni.residentevil.web.service.CapitalService;
 import org.softuni.residentevil.web.service.VirusService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -33,6 +34,7 @@ public class VirusController extends BaseController {
     }
 
     @GetMapping("/add")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView add(ModelAndView modelAndView, @ModelAttribute(name = "bindingModel") VirusAddBindingModel bindingModel) {
         modelAndView.addObject("bindingModel", bindingModel);
         modelAndView.addObject("capitals",
@@ -57,10 +59,11 @@ public class VirusController extends BaseController {
             throw new IllegalArgumentException("Error with creating a virus!");
         }
 
-        return super.redirect("/");
+        return super.redirect("show");
     }
 
     @GetMapping("/show")
+    @PreAuthorize("isAuthenticated()")
     public ModelAndView show(ModelAndView modelAndView) {
         modelAndView.addObject("viruses",
                 this.virusService.findAllViruses().stream().map(v -> this.modelMapper.map(v, VirusListViewModel.class)).collect(Collectors.toList()));
@@ -69,6 +72,7 @@ public class VirusController extends BaseController {
     }
 
     @GetMapping("/delete/{id}")
+    @PreAuthorize("isAuthenticated()")
     public ModelAndView delete(@PathVariable("id") Long id, ModelAndView modelAndView) {
         VirusServiceModel virusServiceModel = this.virusService.findVirusById(id);
 

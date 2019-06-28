@@ -1,24 +1,48 @@
-<th:block th:fragment>
+<th:block th:fragment xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <nav class="navbar navbar-expand-lg re-background">
-        <a class="navbar-brand text-white" th:href="@{/}">Resident Evil</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Viruses
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" th:href="@{/viruses/show}">Show</a>
-                        <a class="dropdown-item" th:href="@{/viruses/add}">Add</a>
-                    </div>
-                </li>
+                <th:block sec:authorize="isAnonymous()">
+                    <a class="navbar-brand text-white" th:href="@{/}">Resident Evil</a>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" th:href="@{/register}">Register</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" th:href="@{/login}">Login</a>
+                    </li>
+                </th:block>
+
+                <th:block sec:authorize="isAuthenticated()">
+                    <a class="navbar-brand text-white" th:href="@{/home}">Resident Evil</a>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" th:href="@{/home}">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Viruses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" th:href="@{/viruses/show}">Show</a>
+                            <a sec:authorize="hasRole('ROLE_ADMIN')" class="dropdown-item" th:href="@{/viruses/add}">Add</a>
+                        </div>
+                    </li>
+                    <li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item active">
+                        <a class="nav-link text-white" th:href="@{/users}">Show users<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <form th:action="@{/logout}" th:method="post">
+                            <input style="position:absolute; right:0" type="submit" class="nav-link border-0 bg-transparent text-white" th:value="Logout">
+                        </form>
+                    </li>
+                </th:block>
             </ul>
         </div>
     </nav>
