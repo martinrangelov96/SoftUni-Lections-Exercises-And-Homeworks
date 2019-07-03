@@ -2,6 +2,7 @@ package org.softuni.productshop.service;
 
 import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.entities.User;
+import org.softuni.productshop.domain.models.service.RoleServiceModel;
 import org.softuni.productshop.domain.models.service.UserServiceModel;
 import org.softuni.productshop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,5 +85,30 @@ public class UserServiceImpl implements UserService {
                 .stream()
                 .map(u -> this.modelMapper.map(u, UserServiceModel.class))
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public void setUserRole(String id, String role) {
+        User user = this.userRepository.findById(id).orElseThrow(() -> new UsernameNotFoundException("Incorrect id!"));
+
+        UserServiceModel userServiceModel = this.modelMapper.map(user, UserServiceModel.class);
+        userServiceModel.getAuthorities().clear();
+
+        switch (role) {
+            case "user":
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_USER"));
+                break;
+            case "moderator":
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_USER"));
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_MODERATOR"));
+                break;
+            case "admin":
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_USER"));
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_MODERATOR"));
+                userServiceModel.getAuthorities().add(this.roleService.findByAuthority("ROLE_ADMIN"));
+                break;
+        }
+
+        this.userRepository.saveAndFlush(this.modelMapper.map(userServiceModel, User.class));
     }
 }
