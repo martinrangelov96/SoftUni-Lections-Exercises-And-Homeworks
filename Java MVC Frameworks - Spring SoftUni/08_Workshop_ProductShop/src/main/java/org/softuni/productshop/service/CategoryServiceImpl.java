@@ -25,7 +25,9 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryServiceModel addCategory(CategoryServiceModel categoryServiceModel) {
         Category category = this.modelMapper.map(categoryServiceModel, Category.class);
-        return this.modelMapper.map(this.categoryRepository.saveAndFlush(category), CategoryServiceModel.class);
+        this.categoryRepository.save(category);
+
+        return this.modelMapper.map(category, CategoryServiceModel.class);
     }
 
     @Override
@@ -47,10 +49,11 @@ public class CategoryServiceImpl implements CategoryService {
     public CategoryServiceModel editCategory(String id, CategoryServiceModel categoryServiceModel) {
         Category category = this.categoryRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Wrong category id!"));
-
         category.setName(categoryServiceModel.getName());
 
-        return this.modelMapper.map(this.categoryRepository.saveAndFlush(category), CategoryServiceModel.class);
+        this.categoryRepository.save(category);
+
+        return this.modelMapper.map(category, CategoryServiceModel.class);
     }
 
     @Override

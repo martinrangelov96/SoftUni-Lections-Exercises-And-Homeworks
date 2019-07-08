@@ -4,7 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.models.binding.UserEditBindingModel;
 import org.softuni.productshop.domain.models.binding.UserRegisterBindingModel;
 import org.softuni.productshop.domain.models.service.UserServiceModel;
-import org.softuni.productshop.domain.models.view.UserAllViewModel;
+import org.softuni.productshop.domain.models.view.UserViewModel;
 import org.softuni.productshop.domain.models.view.UserProfileViewModel;
 import org.softuni.productshop.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,10 +87,10 @@ public class UserController extends BaseController {
     @GetMapping("/all")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView allUsers(ModelAndView modelAndView) {
-        List<UserAllViewModel> users = this.userService.findAllUsers()
+        List<UserViewModel> users = this.userService.findAllUsers()
                 .stream()
                 .map(u -> {
-                    UserAllViewModel user = this.modelMapper.map(u, UserAllViewModel.class);
+                    UserViewModel user = this.modelMapper.map(u, UserViewModel.class);
                     user.setAuthorities(u.getAuthorities().stream().map(a -> a.getAuthority()).collect(Collectors.toSet()));
 
                     return user;

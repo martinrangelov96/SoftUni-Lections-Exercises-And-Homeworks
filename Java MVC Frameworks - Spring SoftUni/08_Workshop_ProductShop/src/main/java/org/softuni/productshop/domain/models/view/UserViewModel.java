@@ -2,14 +2,14 @@ package org.softuni.productshop.domain.models.view;
 
 import java.util.Set;
 
-public class UserAllViewModel {
+public class UserViewModel {
 
     private String id;
     private String username;
     private String email;
     private Set<String> authorities;
 
-    public UserAllViewModel() {
+    public UserViewModel() {
     }
 
     public String getId() {

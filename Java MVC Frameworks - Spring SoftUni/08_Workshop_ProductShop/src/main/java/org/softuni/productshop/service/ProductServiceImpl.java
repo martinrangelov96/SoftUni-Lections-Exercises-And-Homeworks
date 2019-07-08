@@ -3,6 +3,7 @@ package org.softuni.productshop.service;
 import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.entities.Category;
 import org.softuni.productshop.domain.entities.Product;
+import org.softuni.productshop.domain.models.service.CategoryServiceModel;
 import org.softuni.productshop.domain.models.service.ProductServiceModel;
 import org.softuni.productshop.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,9 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductServiceModel addProduct(ProductServiceModel productServiceModel) {
         Product product = this.modelMapper.map(productServiceModel, Product.class);
+        this.productRepository.save(product);
 
-        return this.modelMapper.map(this.productRepository.saveAndFlush(product), ProductServiceModel.class);
+        return this.modelMapper.map(product, ProductServiceModel.class);
     }
 
     @Override
@@ -53,12 +55,12 @@ public class ProductServiceImpl implements ProductService {
         Product product = this.productRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Incorrect product id!"));
 
-        productServiceModel.setCategories(
-                this.categoryService.findAllCategories()
-                        .stream()
-                        .filter(c -> productServiceModel.getCategories().contains(c.getId()))
-                        .collect(Collectors.toList())
-        );
+        List<CategoryServiceModel> categories = this.categoryService.findAllCategories()
+                .stream()
+                .filter(c -> productServiceModel.getCategories().contains(c.getId()))
+                .collect(Collectors.toList());
+
+        productServiceModel.setCategories(categories);
 
         product.setName(productServiceModel.getName());
         product.setDescription(productServiceModel.getDescription());
@@ -87,10 +89,12 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductServiceModel> findAllByCategory(String category) {
         //TODO: OPTIMIZE FILTERING
 
-        return this.productRepository.findAll()
+        List<ProductServiceModel> products = this.productRepository.findAll()
                 .stream()
                 .filter(product -> product.getCategories().stream().anyMatch(categoryStream -> categoryStream.getName().equals(category)))
                 .map(product -> this.modelMapper.map(product, ProductServiceModel.class))
                 .collect(Collectors.toList());
+
+        return products;
     }
 }
