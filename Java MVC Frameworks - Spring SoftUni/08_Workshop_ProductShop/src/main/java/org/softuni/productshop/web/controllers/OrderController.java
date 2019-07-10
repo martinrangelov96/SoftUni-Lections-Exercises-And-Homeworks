@@ -43,7 +43,7 @@ public class OrderController extends BaseController {
     }
 
     @PostMapping("/submit")
-    public ModelAndView submitOrder(@ModelAttribute ProductOrderRequestModel model, Principal principal) {
+    public ModelAndView submitOrder(@ModelAttribute ProductOrderRequestModel model, Principal principal) throws Exception {
         String name = principal.getName();
         this.orderService.createOrder(model.getId(), name);
 

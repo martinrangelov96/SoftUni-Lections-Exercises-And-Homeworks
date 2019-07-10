@@ -25,7 +25,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryServiceModel addCategory(CategoryServiceModel categoryServiceModel) {
         Category category = this.modelMapper.map(categoryServiceModel, Category.class);
-        this.categoryRepository.save(category);
+        category = this.categoryRepository.save(category);
 
         return this.modelMapper.map(category, CategoryServiceModel.class);
     }
@@ -51,7 +51,7 @@ public class CategoryServiceImpl implements CategoryService {
                 .orElseThrow(() -> new IllegalArgumentException("Wrong category id!"));
         category.setName(categoryServiceModel.getName());
 
-        this.categoryRepository.save(category);
+        category = this.categoryRepository.save(category);
 
         return this.modelMapper.map(category, CategoryServiceModel.class);
     }

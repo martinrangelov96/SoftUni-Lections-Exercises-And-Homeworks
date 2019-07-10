@@ -3,7 +3,6 @@ package org.softuni.productshop.web.controllers;
 import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.models.binding.ProductAddBindingModel;
 import org.softuni.productshop.domain.models.binding.ProductEditBindingModel;
-import org.softuni.productshop.domain.models.service.CategoryServiceModel;
 import org.softuni.productshop.domain.models.service.ProductServiceModel;
 import org.softuni.productshop.domain.models.view.ProductAllViewModel;
 import org.softuni.productshop.domain.models.view.ProductDeleteViewModel;
@@ -58,7 +57,7 @@ public class ProductController extends BaseController {
         );
         productServiceModel.setImageUrl(this.cloudinaryService.uploadImage(model.getImage()));
 
-        this.productService.addProduct(productServiceModel);
+        this.productService.createProduct(productServiceModel);
 
         return super.redirect("/products/all");
     }
