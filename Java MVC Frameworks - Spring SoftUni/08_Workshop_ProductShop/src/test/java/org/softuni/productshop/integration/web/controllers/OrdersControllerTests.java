@@ -43,8 +43,8 @@ public class OrdersControllerTests {
     public void setupTest() {
         this.orders = new ArrayList<>();
 
-        when(this.mockOrderRepository.findAllByUser_Username(any()))
-                .thenReturn(orders);
+//        when(this.mockOrderRepository.findAllByUser_Username(any()))
+//                .thenReturn(orders);
     }
 
     @Test

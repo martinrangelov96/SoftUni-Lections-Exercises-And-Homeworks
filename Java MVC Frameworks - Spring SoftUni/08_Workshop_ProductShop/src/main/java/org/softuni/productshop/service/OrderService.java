@@ -6,9 +6,11 @@ import java.util.List;
 
 public interface OrderService {
 
-    void createOrder(String productId, String name) throws Exception;
+    void createOrder(OrderServiceModel orderServiceModel);
 
     List<OrderServiceModel> findAllOrders();
 
     List<OrderServiceModel> findOrdersByCustomer(String name);
+
+    OrderServiceModel findOrderById(String id);
 }

@@ -14,6 +14,8 @@ import org.softuni.productshop.validation.UserValidationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -44,23 +46,10 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void createOrder(String productId, String name) throws Exception {
-        UserServiceModel userServiceModel = this.userService.findUserByUsername(name);
-        if (!this.userValidationService.isValid(userServiceModel)) {
-            throw new Exception();
-        }
-        Product product = this.productRepository.findById(productId)
-                .filter(this.productValidationService::isValid)
-                .orElseThrow(Exception::new);
+    public void createOrder(OrderServiceModel orderServiceModel) {
+        orderServiceModel.setFinishedOn(LocalDateTime.now());
 
-        User user = new User();
-        user.setId(userServiceModel.getId());
-
-        Order order = new Order();
-        order.setProduct(product);
-        order.setUser(user);
-
-        this.orderRepository.save(order);
+        this.orderRepository.saveAndFlush(this.modelMapper.map(orderServiceModel, Order.class));
     }
 
     @Override
@@ -75,12 +64,20 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public List<OrderServiceModel> findOrdersByCustomer(String name) {
-        List<OrderServiceModel> orders = this.orderRepository.findAllByUser_Username(name)
+        List<OrderServiceModel> orders = this.orderRepository.findAllOrdersByCustomer_UsernameOrderByFinishedOn(name)
                 .stream()
                 .map(o -> this.modelMapper.map(o, OrderServiceModel.class))
                 .collect(Collectors.toList());
 
         return orders;
+    }
+
+    @Override
+    public OrderServiceModel findOrderById(String id) {
+        OrderServiceModel orderServiceModel = this.orderRepository.findById(id).map(o -> this.modelMapper.map(o, OrderServiceModel.class))
+                .orElseThrow(() -> new IllegalArgumentException("Order not found"));
+
+        return orderServiceModel;
     }
 
 }

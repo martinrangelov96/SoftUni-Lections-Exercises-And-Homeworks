@@ -1,47 +1,57 @@
 package org.softuni.productshop.domain.models.view;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
 
 public class OrderViewModel {
 
-    private String imageUrl;
-    private String name;
-    private BigDecimal price;
-    private String customer;
+    private String id;
+    private List<ProductDetailsViewModel> products;
+    private UserProfileViewModel customer;
+    private BigDecimal totalPrice;
+    private LocalDateTime finishedOn;
 
     public OrderViewModel() {
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getId() {
+        return id;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public List<ProductDetailsViewModel> getProducts() {
+        return products;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProducts(List<ProductDetailsViewModel> products) {
+        this.products = products;
     }
 
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    public String getCustomer() {
+    public UserProfileViewModel getCustomer() {
         return customer;
     }
 
-    public void setCustomer(String customer) {
+    public void setCustomer(UserProfileViewModel customer) {
         this.customer = customer;
     }
 
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public LocalDateTime getFinishedOn() {
+        return finishedOn;
+    }
+
+    public void setFinishedOn(LocalDateTime finishedOn) {
+        this.finishedOn = finishedOn;
+    }
 }
