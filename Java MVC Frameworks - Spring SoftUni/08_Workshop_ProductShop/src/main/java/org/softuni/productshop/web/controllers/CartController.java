@@ -1,13 +1,16 @@
 package org.softuni.productshop.web.controllers;
 
 import org.modelmapper.ModelMapper;
+import org.softuni.productshop.domain.models.service.OrderProductServiceModel;
 import org.softuni.productshop.domain.models.service.OrderServiceModel;
 import org.softuni.productshop.domain.models.service.ProductServiceModel;
+import org.softuni.productshop.domain.models.view.OrderProductViewModel;
 import org.softuni.productshop.domain.models.view.ProductDetailsViewModel;
 import org.softuni.productshop.domain.models.view.ShoppingCartItem;
 import org.softuni.productshop.service.OrderService;
 import org.softuni.productshop.service.ProductService;
 import org.softuni.productshop.service.UserService;
+import org.softuni.productshop.web.annotations.PageTitle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -46,8 +49,12 @@ public class CartController extends BaseController {
     public ModelAndView addToCartConfirm(String id, int quantity, HttpSession session) {
         ProductDetailsViewModel product = this.modelMapper.map(this.productService.findProductById(id), ProductDetailsViewModel.class);
 
+        OrderProductViewModel orderProductViewModel = new OrderProductViewModel();
+        orderProductViewModel.setProduct(product);
+        orderProductViewModel.setPrice(product.getPrice());
+
         ShoppingCartItem shoppingCartItem = new ShoppingCartItem();
-        shoppingCartItem.setProduct(product);
+        shoppingCartItem.setProduct(orderProductViewModel);
         shoppingCartItem.setQuantity(quantity);
 
         var cart = this.retrieveCart(session);
@@ -58,6 +65,7 @@ public class CartController extends BaseController {
 
     @GetMapping("/details")
     @PreAuthorize("isAuthenticated()")
+    @PageTitle("Cart Details")
     public ModelAndView cartDetails(ModelAndView modelAndView, HttpSession session) {
         var cart = this.retrieveCart(session);
         modelAndView.addObject("totalPrice", this.calculateTotalPrice(cart));
@@ -98,7 +106,7 @@ public class CartController extends BaseController {
 
     private void addItemToCart(ShoppingCartItem item, List<ShoppingCartItem> cart) {
         for(ShoppingCartItem shoppingCartItem : cart) {
-            if (shoppingCartItem.getProduct().getId().equals(item.getProduct().getId())) {
+            if (shoppingCartItem.getProduct().getProduct().getId().equals(item.getProduct().getProduct().getId())) {
                 shoppingCartItem.setQuantity(shoppingCartItem.getQuantity() + item.getQuantity());
                 return;
             }
@@ -108,7 +116,7 @@ public class CartController extends BaseController {
     }
 
     private void removeItemFromCart(String id, List<ShoppingCartItem> cart) {
-        cart.removeIf(ci -> ci.getProduct().getId().equals(id));
+        cart.removeIf(ci -> ci.getProduct().getProduct().getId().equals(id));
     }
 
     private BigDecimal calculateTotalPrice(List<ShoppingCartItem> items) {
@@ -124,11 +132,11 @@ public class CartController extends BaseController {
         OrderServiceModel orderServiceModel = new OrderServiceModel();
         orderServiceModel.setCustomer(this.userService.findUserByUsername(customer));
 
-        List<ProductServiceModel> products = new ArrayList<>();
+        List<OrderProductServiceModel> products = new ArrayList<>();
 
         for (ShoppingCartItem item : cart) {
-            ProductServiceModel productServiceModel =
-                    this.modelMapper.map(item.getProduct(), ProductServiceModel.class);
+            OrderProductServiceModel productServiceModel =
+                    this.modelMapper.map(item.getProduct(), OrderProductServiceModel.class);
 
             for (int i = 0; i < item.getQuantity(); i++) {
                 products.add(productServiceModel);

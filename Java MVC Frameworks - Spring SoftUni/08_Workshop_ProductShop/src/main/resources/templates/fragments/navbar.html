@@ -38,7 +38,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="cartDropdown">
                                 <th:block th:each="item : ${#session.getAttribute('shopping-cart')}" th:object="${item}">
-                                    <a class="dropdown-item" th:text="|*{product.name} x *{quantity}|"></a>
+                                    <a class="dropdown-item" th:text="|*{product.product.name} x *{quantity}|"></a>
                                 </th:block>
                                 <div class="dropdown-divider"></div>
                                 <div class="text-center">
@@ -46,6 +46,9 @@
                                 </div>
                             </div>
                         </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/top-offers}">Top Offers</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" th:href="@{/orders/customer-orders}">My Orders</a>

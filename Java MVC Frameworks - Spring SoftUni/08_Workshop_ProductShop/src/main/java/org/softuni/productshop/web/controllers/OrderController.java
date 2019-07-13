@@ -6,6 +6,7 @@ import org.softuni.productshop.domain.models.service.OrderServiceModel;
 import org.softuni.productshop.domain.models.view.OrderViewModel;
 import org.softuni.productshop.service.OrderService;
 import org.softuni.productshop.service.ProductService;
+import org.softuni.productshop.web.annotations.PageTitle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -33,19 +34,21 @@ public class OrderController extends BaseController {
 
     @GetMapping("/all")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PageTitle("All Orders")
     public ModelAndView allOrders(ModelAndView modelAndView) {
-        List<OrderViewModel> viewModels = this.orderService.findAllOrders()
+        List<OrderViewModel> orderViewModels = this.orderService.findAllOrders()
                 .stream()
                 .map(o -> this.modelMapper.map(o, OrderViewModel.class))
                 .collect(Collectors.toList());
 
-        modelAndView.addObject("orders", viewModels);
+        modelAndView.addObject("orders", orderViewModels);
 
         return super.view("/orders/list-orders", modelAndView);
     }
 
     @GetMapping("/all/details/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PageTitle("Orders Details")
     public ModelAndView allOrderDetails(@PathVariable String id, ModelAndView modelAndView) {
         OrderViewModel orderViewModel = this.modelMapper.map(this.orderService.findOrderById(id), OrderViewModel.class);
         modelAndView.addObject("order", orderViewModel);
@@ -55,20 +58,22 @@ public class OrderController extends BaseController {
 
     @GetMapping("/customer-orders")
     @PreAuthorize("isAuthenticated()")
+    @PageTitle("Customer Orders")
     public ModelAndView customerOrders(Principal principal, ModelAndView modelAndView) {
         String username = principal.getName();
-        List<OrderViewModel> viewModels = this.orderService.findOrdersByCustomer(username)
+        List<OrderViewModel> orderViewModels = this.orderService.findOrdersByCustomer(username)
                 .stream()
                 .map(o -> this.modelMapper.map(o, OrderViewModel.class))
                 .collect(Collectors.toList());
 
-        modelAndView.addObject("orders", viewModels);
+        modelAndView.addObject("orders", orderViewModels);
 
         return super.view("/orders/list-orders", modelAndView);
     }
 
     @GetMapping("/customer-orders/details/{id}")
     @PreAuthorize("isAuthenticated()")
+    @PageTitle("Customer Orders Details")
     public ModelAndView customerOrdersDetails(@PathVariable String id, ModelAndView modelAndView) {
         OrderViewModel orderViewModel = this.modelMapper.map(this.orderService.findOrderById(id), OrderViewModel.class);
         modelAndView.addObject("order", orderViewModel);

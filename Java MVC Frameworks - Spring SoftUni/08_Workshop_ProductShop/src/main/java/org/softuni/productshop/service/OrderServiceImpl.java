@@ -1,12 +1,8 @@
 package org.softuni.productshop.service;
 
 import org.modelmapper.ModelMapper;
-import org.modelmapper.ValidationException;
 import org.softuni.productshop.domain.entities.Order;
-import org.softuni.productshop.domain.entities.Product;
-import org.softuni.productshop.domain.entities.User;
 import org.softuni.productshop.domain.models.service.OrderServiceModel;
-import org.softuni.productshop.domain.models.service.UserServiceModel;
 import org.softuni.productshop.repository.OrderRepository;
 import org.softuni.productshop.repository.ProductRepository;
 import org.softuni.productshop.validation.ProductValidationService;
@@ -15,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -54,12 +48,13 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public List<OrderServiceModel> findAllOrders() {
-        List<OrderServiceModel> orders = this.orderRepository.findAll()
+        List<Order> orders = this.orderRepository.findAll();
+        List<OrderServiceModel> orderServiceModels = orders
                 .stream()
                 .map(o -> this.modelMapper.map(o, OrderServiceModel.class))
                 .collect(Collectors.toList());
 
-        return orders;
+        return orderServiceModels;
     }
 
     @Override

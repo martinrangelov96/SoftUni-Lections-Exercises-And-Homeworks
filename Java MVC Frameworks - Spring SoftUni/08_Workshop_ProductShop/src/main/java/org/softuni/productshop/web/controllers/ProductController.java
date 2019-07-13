@@ -4,13 +4,11 @@ import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.models.binding.ProductAddBindingModel;
 import org.softuni.productshop.domain.models.binding.ProductEditBindingModel;
 import org.softuni.productshop.domain.models.service.ProductServiceModel;
-import org.softuni.productshop.domain.models.view.ProductAllViewModel;
-import org.softuni.productshop.domain.models.view.ProductDeleteViewModel;
-import org.softuni.productshop.domain.models.view.ProductDetailsViewModel;
-import org.softuni.productshop.domain.models.view.ProductEditViewModel;
+import org.softuni.productshop.domain.models.view.*;
 import org.softuni.productshop.service.CategoryService;
 import org.softuni.productshop.service.CloudinaryService;
 import org.softuni.productshop.service.ProductService;
+import org.softuni.productshop.web.annotations.PageTitle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -40,6 +38,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/add")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
+    @PageTitle("Add Product")
     public ModelAndView addProduct() {
         return super.view("/products/add-product");
     }
@@ -64,6 +63,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/all")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
+    @PageTitle("All Products")
     public ModelAndView allProducts(ModelAndView modelAndView) {
         List<ProductAllViewModel> products =
                 this.productService.findAllProducts()
@@ -78,6 +78,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/details/{id}")
     @PreAuthorize("isAuthenticated()")
+    @PageTitle("Product Details")
     public ModelAndView detailsProduct(@PathVariable String id, ModelAndView modelAndView) {
         ProductDetailsViewModel productDetailsViewModel =
                 this.modelMapper.map(this.productService.findProductById(id), ProductDetailsViewModel.class);
@@ -89,6 +90,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/edit/{id}")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
+    @PageTitle("Edit Product")
     public ModelAndView editProduct(@PathVariable String id, ModelAndView modelAndView) {
         ProductServiceModel productServiceModel = this.productService.findProductById(id);
         ProductEditViewModel productEditViewModel =
@@ -117,6 +119,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/delete/{id}")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
+    @PageTitle("Delete Product")
     public ModelAndView deleteProduct(@PathVariable String id, ModelAndView modelAndView) {
         ProductServiceModel productServiceModel = this.productService.findProductById(id);
         ProductDeleteViewModel productDeleteViewModel =
