@@ -67,7 +67,7 @@ public class ProductServiceImpl implements ProductService {
                 .map(p -> {
                     ProductServiceModel productServiceModel = this.modelMapper.map(p, ProductServiceModel.class);
                     this.offerRepository.findByProduct_Id(productServiceModel.getId())
-                            .ifPresent(o -> productServiceModel.setPrice(o.getPrice()));
+                            .ifPresent(o -> productServiceModel.setDiscountedPrice(o.getPrice()));
 
                     return productServiceModel;
                 })
@@ -95,6 +95,13 @@ public class ProductServiceImpl implements ProductService {
                         .map(c -> this.modelMapper.map(c, Category.class))
                         .collect(Collectors.toList())
         );
+
+        this.offerRepository.findByProduct_Id(product.getId())
+                .ifPresent((o) -> {
+                    o.setPrice(product.getPrice().multiply(new BigDecimal(0.8)));
+
+                    this.offerRepository.save(o);
+                });
 
         return this.modelMapper.map(this.productRepository.saveAndFlush(product), ProductServiceModel.class);
     }

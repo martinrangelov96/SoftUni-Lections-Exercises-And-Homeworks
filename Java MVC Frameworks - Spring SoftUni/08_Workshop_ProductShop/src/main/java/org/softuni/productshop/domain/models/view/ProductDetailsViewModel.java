@@ -9,6 +9,7 @@ public class ProductDetailsViewModel {
     private String name;
     private String description;
     private BigDecimal price;
+    private BigDecimal discountedPrice;
 
     public ProductDetailsViewModel() {
     }
@@ -51,5 +52,13 @@ public class ProductDetailsViewModel {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public BigDecimal getDiscountedPrice() {
+        return discountedPrice;
+    }
+
+    public void setDiscountedPrice(BigDecimal discountedPrice) {
+        this.discountedPrice = discountedPrice;
     }
 }

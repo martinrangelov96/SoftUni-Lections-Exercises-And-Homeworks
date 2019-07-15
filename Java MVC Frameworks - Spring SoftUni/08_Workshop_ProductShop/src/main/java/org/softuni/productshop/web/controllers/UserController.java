@@ -82,7 +82,7 @@ public class UserController extends BaseController {
     @PatchMapping("/edit")
     @PreAuthorize("isAuthenticated()")
     public ModelAndView editProfileConfirm(@ModelAttribute UserEditBindingModel model) {
-        if (!model.getPassword().equals(model.getConfirmPassword())) {
+        if (model.getPassword() != null && !model.getPassword().equals(model.getConfirmPassword())) {
             return super.redirect("/users/edit");
         }
 

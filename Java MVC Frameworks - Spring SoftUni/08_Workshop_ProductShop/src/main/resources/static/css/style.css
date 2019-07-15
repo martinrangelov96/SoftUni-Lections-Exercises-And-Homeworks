@@ -24,3 +24,8 @@ img.img-thumbnail {
     max-width: 40px;
     max-height: 40px;
 }
+
+.btn-width {
+    width: 120px;
+    margin: 5px;
+}

@@ -36,6 +36,10 @@ public class OfferServiceImpl implements OfferService {
 
         List<ProductServiceModel> products = this.productService.findAllProducts();
 
+        if (products.isEmpty()) {
+            return;
+        }
+
         Random rnd = new Random();
         List<Offer> offers = new ArrayList<>();
 

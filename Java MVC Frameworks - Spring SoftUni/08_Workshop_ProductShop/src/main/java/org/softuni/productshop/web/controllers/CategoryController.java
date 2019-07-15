@@ -8,10 +8,12 @@ import org.softuni.productshop.domain.models.view.CategoryViewModel;
 import org.softuni.productshop.domain.models.view.CategoryDeleteViewModel;
 import org.softuni.productshop.domain.models.view.CategoryEditViewModel;
 import org.softuni.productshop.service.CategoryService;
+import org.softuni.productshop.validation.CategoryAddValidator;
 import org.softuni.productshop.web.annotations.PageTitle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -24,23 +26,35 @@ public class CategoryController extends BaseController {
 
     private final CategoryService categoryService;
     private final ModelMapper modelMapper;
+    private final CategoryAddValidator validator;
 
     @Autowired
-    public CategoryController(CategoryService categoryService, ModelMapper modelMapper) {
+    public CategoryController(CategoryService categoryService, ModelMapper modelMapper, CategoryAddValidator validator) {
         this.categoryService = categoryService;
         this.modelMapper = modelMapper;
+        this.validator = validator;
     }
 
     @GetMapping("/add")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
     @PageTitle("Add Category")
-    public ModelAndView add() {
-        return super.view("/categories/add-category");
+    public ModelAndView add(CategoryAddBindingModel model, ModelAndView modelAndView) {
+        modelAndView.addObject("model", model);
+
+        return super.view("/categories/add-category", modelAndView);
     }
 
     @PostMapping("/add")
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
-    public ModelAndView addConfirm(@ModelAttribute CategoryAddBindingModel model) {
+    public ModelAndView addConfirm(@ModelAttribute(name = "model") CategoryAddBindingModel model, BindingResult bindingResult, ModelAndView modelAndView) {
+        this.validator.validate(model, bindingResult);
+
+        if (bindingResult.hasErrors()) {
+            modelAndView.addObject("model", model);
+
+            return super.view("/categories/add-category", modelAndView);
+        }
+
         this.categoryService.addCategory(this.modelMapper.map(model, CategoryServiceModel.class));
 
         return redirect("/categories/all");

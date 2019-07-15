@@ -71,12 +71,12 @@ public class UserServiceImpl implements UserService {
             throw new IllegalArgumentException("Incorrect password.");
         }
 
-        user.setPassword(!"".equals(userServiceModel.getPassword()) ?
+        user.setPassword(userServiceModel.getPassword() != null ?
                 this.bCryptPasswordEncoder.encode(userServiceModel.getPassword()) :
                 user.getPassword());
         user.setEmail(userServiceModel.getEmail());
 
-        return this.modelMapper.map(this.userRepository.saveAndFlush(user), UserServiceModel.class);
+        return this.modelMapper.map(this.userRepository.save(user), UserServiceModel.class);
     }
 
     @Override
@@ -109,6 +109,6 @@ public class UserServiceImpl implements UserService {
                 break;
         }
 
-        this.userRepository.saveAndFlush(this.modelMapper.map(userServiceModel, User.class));
+        this.userRepository.save(this.modelMapper.map(userServiceModel, User.class));
     }
 }

@@ -1,5 +1,8 @@
 package org.softuni.productshop.domain.models.service;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class CategoryServiceModel extends BaseServiceModel {
 
     private String id;
@@ -18,6 +21,8 @@ public class CategoryServiceModel extends BaseServiceModel {
         this.id = id;
     }
 
+    @NotNull
+    @NotEmpty
     public String getName() {
         return name;
     }
