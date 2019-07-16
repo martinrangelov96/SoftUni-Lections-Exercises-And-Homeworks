@@ -3,6 +3,7 @@ package org.softuni.productshop.web.controllers;
 import org.modelmapper.ModelMapper;
 import org.softuni.productshop.domain.models.binding.ProductAddBindingModel;
 import org.softuni.productshop.domain.models.binding.ProductEditBindingModel;
+import org.softuni.productshop.domain.models.service.CategoryServiceModel;
 import org.softuni.productshop.domain.models.service.ProductServiceModel;
 import org.softuni.productshop.domain.models.view.*;
 import org.softuni.productshop.service.CategoryService;
@@ -111,7 +112,17 @@ public class ProductController extends BaseController {
     @PreAuthorize("hasRole('ROLE_MODERATOR')")
     public ModelAndView editProductConfirm(@PathVariable String id, @ModelAttribute ProductEditBindingModel model) {
         ProductServiceModel productServiceModel = this.modelMapper.map(model, ProductServiceModel.class);
+        List<CategoryServiceModel> categories = model.getCategories()
+                .stream()
+                .map(categoryId -> {
+                    CategoryServiceModel categoryServiceModel = new CategoryServiceModel();
+                    categoryServiceModel.setId(categoryId);
 
+                    return categoryServiceModel;
+                })
+                .collect(Collectors.toList());
+
+        productServiceModel.setCategories(categories);
         this.productService.editProductById(id, productServiceModel);
 
         return super.redirect("/products/details/" + id);

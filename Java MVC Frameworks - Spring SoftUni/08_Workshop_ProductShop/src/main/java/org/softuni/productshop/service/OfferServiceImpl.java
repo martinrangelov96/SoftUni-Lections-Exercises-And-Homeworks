@@ -32,6 +32,7 @@ public class OfferServiceImpl implements OfferService {
 
     @Scheduled(fixedRate = 300000)
     private void generateOffers() {
+        System.out.println("debug");
         this.offerRepository.deleteAll();
 
         List<ProductServiceModel> products = this.productService.findAllProducts();
@@ -43,14 +44,19 @@ public class OfferServiceImpl implements OfferService {
         Random rnd = new Random();
         List<Offer> offers = new ArrayList<>();
 
-        for (int i = 0; i < 5; i++) {
+        int numberOfOffers = products.size() / 2;
+
+        for (int i = 0; i < numberOfOffers; i++) {
             Offer offer = new Offer();
             offer.setProduct(this.modelMapper.map(products.get(rnd.nextInt(products.size())), Product.class));
             //20% discount
             offer.setPrice(offer.getProduct().getPrice().multiply(new BigDecimal(0.8)));
 
+            //check if the same product isn't already discounted
             if (offers.stream().filter(o -> o.getProduct().getId().equals(offer.getProduct().getId())).count() == 0) {
                 offers.add(offer);
+            } else {
+                i--;
             }
 
         }

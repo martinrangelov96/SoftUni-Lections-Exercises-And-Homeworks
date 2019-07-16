@@ -10,19 +10,19 @@
 <header>
     <th:block th:include="~{fragments/navbar}"></th:block>
 </header>
-<main class="mt-3">
+<main class="mt-3 ml-1">
     <div class="row d-flex justify-content-between">
-        <div class="products-navigation col-md-3">
+        <div class="products-navigation col-md-3 ml-1">
             <h2 class="font-weight-bold">Navigation</h2>
             <form class="mt-3">
-                <div class="custom-control custom-radio mt-3">
+                <div class="custom-control custom-radio mt-3 ml-1">
                     <input type="radio" id="allRadio" name="selection"
                            class="custom-control-input"
                            value="all">
                     <label class="h4 custom-control-label" for="allRadio">All</label>
                 </div>
                 <th:block th:each="category : ${categories}" th:object="${category}">
-                    <div class="custom-control custom-radio mt-3">
+                    <div class="custom-control custom-radio mt-3 ml-1">
                         <input type="radio" th:id="|*{name.toLowerCase()}Radio|" name="selection"
                                class="custom-control-input"
                                th:value="*{name}">

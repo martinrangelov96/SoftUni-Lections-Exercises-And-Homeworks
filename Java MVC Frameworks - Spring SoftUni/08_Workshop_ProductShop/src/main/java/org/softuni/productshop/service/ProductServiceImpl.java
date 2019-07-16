@@ -79,13 +79,6 @@ public class ProductServiceImpl implements ProductService {
         Product product = this.productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("Product with the given id was not found!"));
 
-        List<CategoryServiceModel> categories = this.categoryService.findAllCategories()
-                .stream()
-                .filter(c -> productServiceModel.getCategories().contains(c.getId()))
-                .collect(Collectors.toList());
-
-        productServiceModel.setCategories(categories);
-
         product.setName(productServiceModel.getName());
         product.setDescription(productServiceModel.getDescription());
         product.setPrice(productServiceModel.getPrice());

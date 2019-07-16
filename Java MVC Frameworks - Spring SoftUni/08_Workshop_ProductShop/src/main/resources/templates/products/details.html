@@ -31,7 +31,8 @@
                     <h4 th:text="|Price:  ${product.price}|"></h4>
                 </th:block>
                 <th:block th:if="${product.discountedPrice != null}">
-                    <h4 th:text="|Price:  ${product.discountedPrice}|"></h4>
+                    <h4 th:text="|Original Price:  ${product.price}|"></h4>
+                    <h4 style="color: green" th:text="|Discounted Price:  ${product.discountedPrice}|"></h4>
                 </th:block>
             </div>
         </div>

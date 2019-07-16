@@ -51,7 +51,11 @@ public class CartController extends BaseController {
 
         OrderProductViewModel orderProductViewModel = new OrderProductViewModel();
         orderProductViewModel.setProduct(product);
-        orderProductViewModel.setPrice(product.getPrice());
+        if (product.getDiscountedPrice() != null) {
+            orderProductViewModel.setPrice(product.getDiscountedPrice());
+        } else {
+            orderProductViewModel.setPrice(product.getPrice());
+        }
 
         ShoppingCartItem shoppingCartItem = new ShoppingCartItem();
         shoppingCartItem.setProduct(orderProductViewModel);
@@ -69,6 +73,7 @@ public class CartController extends BaseController {
     public ModelAndView cartDetails(ModelAndView modelAndView, HttpSession session) {
         var cart = this.retrieveCart(session);
         modelAndView.addObject("totalPrice", this.calculateTotalPrice(cart));
+
 
         return super.view("/cart/cart-details", modelAndView);
     }
@@ -88,6 +93,7 @@ public class CartController extends BaseController {
 
         OrderServiceModel orderServiceModel = this.prepareOrder(cart, principal.getName());
         this.orderService.createOrder(orderServiceModel);
+        cart.clear();
 
         return super.redirect("/home");
     }
@@ -105,7 +111,7 @@ public class CartController extends BaseController {
     }
 
     private void addItemToCart(ShoppingCartItem item, List<ShoppingCartItem> cart) {
-        for(ShoppingCartItem shoppingCartItem : cart) {
+        for (ShoppingCartItem shoppingCartItem : cart) {
             if (shoppingCartItem.getProduct().getProduct().getId().equals(item.getProduct().getProduct().getId())) {
                 shoppingCartItem.setQuantity(shoppingCartItem.getQuantity() + item.getQuantity());
                 return;
@@ -121,7 +127,7 @@ public class CartController extends BaseController {
 
     private BigDecimal calculateTotalPrice(List<ShoppingCartItem> items) {
         BigDecimal totalPrice = BigDecimal.ZERO;
-        for(ShoppingCartItem item : items) {
+        for (ShoppingCartItem item : items) {
             totalPrice = totalPrice.add(item.getProduct().getPrice().multiply(new BigDecimal(item.getQuantity())));
         }
 

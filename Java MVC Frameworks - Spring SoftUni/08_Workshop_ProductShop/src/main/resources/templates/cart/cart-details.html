@@ -31,7 +31,12 @@
                 <th class="col-md-2 text-center"><img th:src="*{product.product.imageUrl}" alt="Product" height="150" width="150"></th>
                 <td class="col-md-3 text-center" th:text="*{product.product.name}"></td>
                 <td class="col-md-2 text-center" th:text="*{product.product.description}"></td>
-                <td class="col-md-2 text-center" th:text="*{product.product.price}"></td>
+                <th:block th:if="*{product.product.discountedPrice == null}">
+                    <td class="col-md-2 text-center" th:text="*{product.product.price}"></td>
+                </th:block>
+                <th:block th:if="*{product.product.discountedPrice != null}">
+                    <td class="col-md-2 text-center" th:text="*{product.product.discountedPrice}"></td>
+                </th:block>
                 <td class="col-md-1 text-center" th:text="*{quantity}"></td>
                 <td class="col-md-2 text-center">
                     <form th:action="@{/cart/remove-product}" th:method="delete">
